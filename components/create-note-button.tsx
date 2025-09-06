@@ -65,7 +65,7 @@ export const CreateNoteButton = ({ notebookId }: { notebookId: string }) => {
         toast.error(response.message);
       }
     } catch {
-      toast.error("Failed to create note");
+      toast.error(" خطایی رخ داد. لطفا دوباره امتحان کنید");
     } finally {
       setIsLoading(false);
     }

@@ -47,7 +47,7 @@ export default function NotebookCard({ notebook }: NotebookCardProps) {
         router.refresh();
       }
     } catch {
-      toast.error("Failed to delete notebook");
+      toast.error("دفترچه حذف نشد");
     } finally {
       setIsDeleting(false);
       setIsOpen(false);

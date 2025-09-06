@@ -36,8 +36,8 @@ const formSchema = z.object({
   confirmPassword: z.string().min(8),
   name: z.string().min(1),
 }).refine((data) => data.password === data.confirmPassword, {
-    message: "پسورد ها شبیه هم نیستن",
-    path: ["confirmPassword"],
+  message: "پسورد ها شبیه هم نیستن",
+  path: ["confirmPassword"],
 });;
 
 export function SignupForm({
@@ -66,7 +66,7 @@ export function SignupForm({
         values.name
       );
       if (response.success) {
-        toast.success("Please check your email for verification.");
+        toast.success("لطفا ایمیل خود را برسی کنید و روی لینک تایید حساب کلیک کنید");
       } else {
         toast.error(response.message);
       }
@@ -120,7 +120,7 @@ export function SignupForm({
                       <FormItem>
                         <FormLabel>نام</FormLabel>
                         <FormControl>
-                          <Input placeholder="John Doe" {...field} />
+                          <Input placeholder="امیرحسین حسینی" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>

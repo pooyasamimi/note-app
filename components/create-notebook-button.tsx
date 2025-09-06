@@ -54,7 +54,7 @@ export const CreateNotebookButton = () => {
       
 
       if (!userId) {
-        toast.error("You must be logged in to create a notebook");
+        toast.error("برای ایجاد دفترچه یادداشت باید وارد سیستم شوید");
         return;
       }
 
@@ -71,7 +71,7 @@ export const CreateNotebookButton = () => {
         toast.error(response.message);
       }
     } catch {
-      toast.error("Failed to create notebook");
+      toast.error("خطایی رخ داد. لطفا دوباره امتحان کنید");
     } finally {
       setIsLoading(false);
     }

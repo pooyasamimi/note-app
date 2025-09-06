@@ -47,7 +47,7 @@ export default function NoteCard({ note }: NotebookCardProps) {
         router.refresh();
       }
     } catch {
-      toast.error("Failed to delete note");
+      toast.error("یادداشت حذف نشد");
     } finally {
       setIsDeleting(false);
       setIsOpen(false);

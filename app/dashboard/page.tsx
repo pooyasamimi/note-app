@@ -8,7 +8,7 @@ export default async function Page() {
 
   return (
     <PageWrapper breadcrumbs={[{ label: "Dashboard", href: "/dashboard" }]}>
-      <h1>Notebooks</h1>
+      <h1>دفترچه ها</h1>
 
       <CreateNotebookButton />
 
@@ -20,7 +20,7 @@ export default async function Page() {
       </div>
 
       {notebooks.success && notebooks?.notebooks?.length === 0 && (
-        <div>No notebooks found</div>
+        <div> هیچ دفترچه یادداشتی پیدا نشد </div>
       )}
     </PageWrapper>
   );

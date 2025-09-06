@@ -54,7 +54,7 @@ export function ForgotPasswordForm({
       });
 
       if (!error) {
-        toast.success("Please check your email for a password reset link.");
+        toast.success("لطفا ایمیل خود را برای لینک بازنشانی رمز عبور بررسی کنید.");
       } else {
         toast.error(error.message);
       }
