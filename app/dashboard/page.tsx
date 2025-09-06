@@ -7,7 +7,7 @@ export default async function Page() {
   const notebooks = await getNotebooks();
 
   return (
-    <PageWrapper breadcrumbs={[{ label: "Dashboard", href: "/dashboard" }]}>
+    <PageWrapper breadcrumbs={[{ label: "داشبورد", href: "/dashboard" }]}>
       <h1>دفترچه ها</h1>
 
       <CreateNotebookButton />

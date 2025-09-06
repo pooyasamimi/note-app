@@ -15,7 +15,7 @@ export default async function NotebookPage({ params }: { params: Params }) {
   return (
     <PageWrapper
       breadcrumbs={[
-        { label: "Dashboard", href: "/dashboard" },
+        { label: "داشبورد", href: "/dashboard" },
         {
           label: notebook?.name ?? "Notebook",
           href: `/dashboard/notebook/${notebookId}`,
