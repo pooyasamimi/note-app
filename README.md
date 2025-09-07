@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📒 Note App  
 
-## Getting Started
+A modern and minimal **note-taking web application** built with **Next.js, TypeScript, TailwindCSS, and Tiptap Editor**.  
+It provides a clean interface for writing, organizing, and managing notes with support for **rich text editing, authentication, theming, and responsive design**.  
 
-First, run the development server:
+---
 
+## 🔗 Online Demo  
+👉 [See Live Demo](https://notedev-iota.vercel.app/)  
+
+---
+
+## ✨ Features  
+- 📝 **Rich Text Editing** (bold, italic, headings, lists, tables, code blocks, highlight, RTL/LTR support)  
+- 🔐 **Authentication** (Google login + session management)  
+- 🎨 **Dark/Light Mode Toggle**  
+- 📱 **Responsive UI** with TailwindCSS  
+- ⚡ **Fast & Scalable** — deployed on Vercel  
+- 🌍 **Multi-language typing support** (English & Persian mixed writing)  
+- 🗄️ **Auto-save notes** in real time  
+
+---
+
+## 🛠 Tech Stack  
+- **Framework**: [Next.js 15](https://nextjs.org/) + [React 19](https://react.dev/)  
+- **Language**: TypeScript  
+- **Styling**: TailwindCSS + shadcn/ui  
+- **Editor**: Tiptap (ProseMirror) + Lowlight (syntax highlighting)  
+- **Auth**: Better Auth (with Google OAuth)  
+- **Deployment**: Vercel  
+- **Icons**: Lucide React  
+- **DB**: Neon
+- **ORM**: Drizzle
+
+---
+
+## 🚀 Getting Started  
+
+### 1️⃣ Clone the repo  
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/note-app.git
+cd note-app
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2️⃣ Install dependencies  
+```bash
+pnpm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3️⃣ Setup environment variables  
+Create a `.env.local` file in the root:  
+```env
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
+BETTER_AUTH_URL=http://localhost:3000
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+BETTER_AUTH_SECRET=your_betterauth_secret
+DATABASE_URL = your_DB_url
+RESEND_API_KEY = your_resend_API_key
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+*(When deploying on Vercel, update these with your production domain.)*  
 
-## Learn More
+### 4️⃣ Run the development server  
+```bash
+pnpm dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser.  
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📦 Deployment  
+Easily deploy on [Vercel](https://vercel.com/):  
+- Push your repo to GitHub  
+- Import it into Vercel  
+- Add your `.env` variables in **Project Settings → Environment Variables**  
+- Done 🎉  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🤝 Contributing  
+Contributions, issues, and feature requests are welcome!  
+Feel free to open an [issue](https://github.com/pooyasamimi/note-app/issues) or submit a PR.  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📜 License  
+This project is licensed under the **MIT License**.  
+
+
+
+
