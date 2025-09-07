@@ -31,7 +31,7 @@ export const auth = betterAuth({
     enabled: true,
     sendResetPassword: async ({ user, url }) => {
       await resend.emails.send({
-        from: "Note App <samimipooya1980@gmail.com>",
+        from: "Note App <poooyanoteapp12e32213.dpdns.org>",
         to: [user.email],
         subject: "Reset your password",
         react: PasswordResetEmail({
@@ -49,8 +49,8 @@ export const auth = betterAuth({
   session: {
     expiresIn: 60 * 60 * 24 * 30,
   },
-  advanced:{
-    cookiePrefix: "note-app"
+  advanced: {
+    cookiePrefix: "note-app",
   },
   plugins: [nextCookies()],
 });
