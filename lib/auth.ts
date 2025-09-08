@@ -13,8 +13,8 @@ export const auth = betterAuth({
   emailVerification: {
     sendVerificationEmail: async ({ user, url }) => {
       await resend.emails.send({
-        from: "Note App <support@send.poooyanoteapp12e32213.dpdns.org>",
-        to: user.email,
+        from: "Note App <hello@poooyanoteapp12e32213.dpdns.org>",
+        to: [user.email],
         subject: "Verify your email address",
         react: VerificationEmail({ userName: user.name, verificationUrl: url }),
       });
@@ -31,8 +31,8 @@ export const auth = betterAuth({
     enabled: true,
     sendResetPassword: async ({ user, url }) => {
       await resend.emails.send({
-        from: "Note App <support@send.poooyanoteapp12e32213.dpdns.org>",
-        to: user.email,
+        from: "Note App <hello@poooyanoteapp12e32213.dpdns.org>",
+        to: [user.email],
         subject: "Reset your password",
         react: PasswordResetEmail({
           userName: user.name,
