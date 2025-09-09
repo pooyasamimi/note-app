@@ -29,6 +29,7 @@ import { toast } from "sonner";
 import { Loader2 } from "lucide-react";
 import Link from "next/link";
 import { authClient } from "@/lib/auth-client";
+import { useRouter } from "next/navigation";
 
 const formSchema = z.object({
   email: z.email(),
@@ -45,6 +46,9 @@ export function SignupForm({
   ...props
 }: React.ComponentProps<"div">) {
   const [isLoading, setIsLoading] = useState(false);
+  const router = useRouter()
+
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -67,6 +71,7 @@ export function SignupForm({
       );
       if (response.success) {
         toast.success("لطفا ایمیل خود را برسی کنید و روی لینک تایید حساب کلیک کنید");
+        router.push('/login')
       } else {
         toast.error(response.message);
       }
