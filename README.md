@@ -6,7 +6,7 @@ It provides a clean interface for writing, organizing, and managing notes with s
 ---
 
 ## 🔗 Online Demo  
-👉 [See Live Demo](https://notedev-iota.vercel.app/)  
+👉 [See Live Demo](https://poooyanoteapp12e32213.dpdns.org/)  
 
 ---
 
